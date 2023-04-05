@@ -12,14 +12,45 @@
     />
     <link rel="stylesheet" href="/css/style.css" />
 
-    <title>Ejercicio 1 Javascript DOM: Números mágicos</title>
+    <title>Ejercicio 6 Javascript DOM: El Temporizador</title>
   </head>
   <body class="text-white bg bg-dark">
     <header class="p-4 text-center shadow-lg">
-      <p class="lead">Ejercicio Nº 1 | Practica DOM | Javascript</p>
-      <h1 class="display-2">Números mágicos</h1>
+      <p class="lead">Ejercicio Nº 6 | Practica DOM | Javascript</p>
+      <h1 class="display-2">El Temporizador</h1>
     </header>
-    <main></main>
+    <main class="container d-flex justify-content-center">
+      <section
+        class="contenedorReloj d-flex justify-content-around flex-column"
+      >
+        <div
+          class="container fecha text-center d-flex justify-content-evenly align-items-center"
+        >
+          <form>
+            <label for="horas">Hs</label>
+            <input type="number" name="hora" id="hora" required />
+            <label for="minutos">Min</label>
+            <input type="number" name="minutos" id="minutos" required />
+            <label for="segundos">Seg</label>
+            <input type="number" name="segundos" id="segundos" required />
+          </form>
+        </div>
+
+        <div
+          class="container fecha text-center d-flex justify-content-evenly align-items-center"
+        >
+          <button>INICIO</button>
+          <button>PAUSA</button>
+          <button>RESET</button>
+        </div>
+
+        <div
+          class="container hora text-center d-flex justify-content-center align-items-center"
+        >
+          <p class="display-1">02:02:58</p>
+        </div>
+      </section>
+    </main>
     <footer class="text-center p-5 shadow-lg">
       &copy; Todos los derechos reservados
       <b>
