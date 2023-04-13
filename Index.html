@@ -10,11 +10,15 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="/css/style.css" />
 
     <title>Ejercicio 6 Javascript DOM: El Temporizador</title>
   </head>
-  <body class="text-white bg bg-dark">
+  <body class="text-white bg bg-dark" >
     <header class="p-4 text-center shadow-lg">
       <p class="lead">Ejercicio Nº 6 | Practica DOM | Javascript</p>
       <h1 class="display-2">El Temporizador</h1>
@@ -27,21 +31,29 @@
           class="container fecha text-center d-flex justify-content-evenly align-items-center"
         >
           <form>
-            <label for="horas">Hs</label>
-            <input type="number" name="hora" id="hora" required />
-            <label for="minutos">Min</label>
-            <input type="number" name="minutos" id="minutos" required />
-            <label for="segundos">Seg</label>
-            <input type="number" name="segundos" id="segundos" required />
+            <input type="number" name="hora" id="hora" max="99" min="0" required  class="shadow" value="00"/>
+            <label for="horas">hs</label>
+
+            <input type="number" name="minutos" id="minutos" max="59" min="0" required value="00" />
+            <label for="minutos">min</label>
+
+            <input type="number" name="segundos" id="segundos" max="59" min="0" required value="00" />
+            <label for="segundos">seg</label>
           </form>
         </div>
 
         <div
-          class="container fecha text-center d-flex justify-content-evenly align-items-center"
+          class="container botonera  text-center d-flex justify-content-evenly align-items-center"
         >
-          <button>INICIO</button>
-          <button>PAUSA</button>
-          <button>RESET</button>
+          <button class="btn" id="btnPlay">
+            <i class="bi bi-play-fill"></i>
+          </button>
+          <button class="btn" id="btnPausa">
+            <i class="bi bi-pause-fill"></i>
+          </button>
+          <button class="btn" id="btnReiniciar">
+            <i class="bi bi-stop-fill"></i>
+          </button>
         </div>
 
         <div
@@ -51,7 +63,7 @@
         </div>
       </section>
     </main>
-    <footer class="text-center p-5 shadow-lg">
+    <footer class="text-center p-5 shadow-lg mt-2">
       &copy; Todos los derechos reservados
       <b>
         <a

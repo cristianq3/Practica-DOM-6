@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@font-face {
+  font-family: cronometro;
+  src: url("/fonts/fuenteReloj.ttf");
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -19,10 +24,11 @@ main {
   padding: 20px;
   background-color: beige;
   background-image: linear-gradient(135deg, #06290a 0%, #1c5775 100%);
+  padding: 10px;
 }
 
 .fecha {
-  height: 25%;
+  padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.175);
   border-radius: 1px;
   font-weight: 500;
@@ -30,10 +36,21 @@ main {
   background-color: rgba(128, 128, 128, 0.345);
   max-width: 500px;
   text-shadow: -4px 8px 4px rgba(54, 54, 54, 1);
-  box-shadow: 3px 5px #18133453;;
-
-
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
+
+.botonera {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 1px;
+  font-weight: 500;
+  font-size: 25px;
+  background-color: rgba(128, 128, 128, 0.345);
+  max-width: 500px;
+  text-shadow: -4px 8px 4px rgba(54, 54, 54, 1);
+}
+
 .hora {
   height: 70%;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -41,11 +58,44 @@ main {
   max-width: 500px;
   border-radius: 1px;
   text-shadow: -4px 8px 4px rgba(54, 54, 54, 1);
-  box-shadow: 3px 5px #18133453;;
+
+  font-family: cronometro;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
+.bi {
+  font-size: 45px;
+  padding: 2px;
+  color: white;
+  border: none;
+}
 
+.bi:hover {
+  color: rgba(76, 232, 24, 0.253);
+}
+.btn {
+  border: none;
+}
+.btn:hover {
+  transform: scale(1.5);
+  transition: 200ms;
+}
+
+.btn:active {
+  transform: scale(1);
+}
+label {
+  font-size: small;
+}
 input {
-font-size: xx-small;
-
+  width: 70px;
+  height: 45px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: cronometro;
+  color: #ffffff;
+  background-color: #06290a42;
+  border: none;
 }
