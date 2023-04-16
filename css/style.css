@@ -25,6 +25,14 @@ main {
   background-color: beige;
   background-image: linear-gradient(135deg, #06290a 0%, #1c5775 100%);
   padding: 10px;
+
+ 
+}
+
+.contenedor {
+
+  font-size: xx-large;
+
 }
 
 .fecha {

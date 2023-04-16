@@ -18,7 +18,7 @@
 
     <title>Ejercicio 6 Javascript DOM: El Temporizador</title>
   </head>
-  <body class="text-white bg bg-dark" >
+  <body class="text-white bg bg-dark">
     <header class="p-4 text-center shadow-lg">
       <p class="lead">Ejercicio Nº 6 | Practica DOM | Javascript</p>
       <h1 class="display-2">El Temporizador</h1>
@@ -30,36 +30,63 @@
         <div
           class="container fecha text-center d-flex justify-content-evenly align-items-center"
         >
+        
           <form>
-            <input type="number" name="hora" id="hora" max="99" min="0" required  class="shadow" value="00"/>
+            <h6 class="pb-3">Ingrese el tiempo</h6> 
+            <input
+              type="number"
+              name="hora"
+              id="horas"
+              max="99"
+              min="0"
+              required
+              class="shadow"
+              value="00"
+            />
             <label for="horas">hs</label>
 
-            <input type="number" name="minutos" id="minutos" max="59" min="0" required value="00" />
+            <input
+              type="number"
+              name="minutos"
+              id="minutos"
+              max="59"
+              min="0"
+              required
+              value="00"
+            />
             <label for="minutos">min</label>
 
-            <input type="number" name="segundos" id="segundos" max="59" min="0" required value="00" />
+            <input
+              type="number"
+              name="segundos"
+              id="segundos"
+              max="59"
+              min="0"
+              required
+              value="00"
+            />
             <label for="segundos">seg</label>
+
+            <div>
+            <button class="btn" type="submit" id="btnPlay">
+              <i class="bi bi-play-fill"></i>
+            </button>
+            <button class="btn" id="btnPausa">
+              <i class="bi bi-pause-fill"></i>
+            </button>
+            <button class="btn" id="btnReiniciar">
+              <i class="bi bi-stop-fill"></i>
+            </button></div>
           </form>
         </div>
 
-        <div
-          class="container botonera  text-center d-flex justify-content-evenly align-items-center"
-        >
-          <button class="btn" id="btnPlay">
-            <i class="bi bi-play-fill"></i>
-          </button>
-          <button class="btn" id="btnPausa">
-            <i class="bi bi-pause-fill"></i>
-          </button>
-          <button class="btn" id="btnReiniciar">
-            <i class="bi bi-stop-fill"></i>
-          </button>
-        </div>
+    
 
         <div
-          class="container hora text-center d-flex justify-content-center align-items-center"
+          class="container contenedor hora text-center d-flex justify-content-center align-items-center"
+          id="contenedor"
         >
-          <p class="display-1">02:02:58</p>
+          00:00:00
         </div>
       </section>
     </main>
