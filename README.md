@@ -18,7 +18,7 @@ Requerimiento:  Crea una web con bootstrap y js, que contenga un botón input do
 
 Clonando el repositorio
 
-`$ git clone https://github.com/cristianq3/Practica-DOM-3.git`
+`$ git clone https://github.com/cristianq3/Practica-DOM-6.git`
 
 ## Autor
 
